@@ -17,23 +17,7 @@ dtype: float64
 [0.0694859 0.9305141] 
 
 1
-Beginning simulation... Total number of experiments: 2835
+Beginning simulation... Total number of experiments: 2025
 Data Path ./experiments/replication_experiments/replication_data/
-Experiment finished total time: 1765.2417171001434
+Experiment finished total time: 760.5323007106781
 Plotting data...
-0                DP-TR Newton - uniform rounds:None
-1                DP-TR Newton - uniform rounds:None
-2                DP-TR Newton - uniform rounds:None
-3                DP-TR Newton - uniform rounds:None
-4                DP-TR Newton - uniform rounds:None
-                           ...                     
-2830    DP-TR Newton - adaptive_hessian rounds: inf
-2831    DP-TR Newton - adaptive_hessian rounds: inf
-2832    DP-TR Newton - adaptive_hessian rounds: inf
-2833    DP-TR Newton - adaptive_hessian rounds: inf
-2834    DP-TR Newton - adaptive_hessian rounds: inf
-Name: args, Length: 2520, dtype: object
-{'DP-TR Newton - exact_quantiles rounds:None', 'DP-TR Newton - adaptive_hessian rounds: 30', 'DP-TR Newton - adaptive_hessian rounds: inf', 'DP-TR Newton - log rounds:None', 'DP-TR Newton - adaptive_hessian rounds: 5', 'DP-TR Newton - adaptive_hessian rounds: 10', 'DP-TR Newton - uniform rounds:None', 'DP-TR Newton - adaptive_hessian rounds: 20'}
-{'4'}
-{'100', '200', '300'}
-{'Credit 1'}
