@@ -4,11 +4,11 @@ import numpy as np
 from experiments.experiment_helpers.data_loader import DataLoader
 from experiments.experiment_helpers.experiment_runner import ExperimentRunner
 
-from dev.communication_framework import CommunicationsFramework
+# from dev.communication_framework import CommunicationsFramework
 
 global_seeds = [1, 4, 100, 333, 1002]
 data_loader = DataLoader([1, 4, 100, 333, 1002])
-replication_path = "../replication_experiments/replication_data/"
+replication_path = "./experiments/replication_experiments/replication_data/"
 
 
 # =================== Paper Experiments ===================

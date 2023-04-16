@@ -2,7 +2,7 @@ from experiments.paper_experiments.paper_experiments import *
 from experiments.paper_experiments.paper_plotter import *
 import os.path
 
-base_path = "./replication_data/"
+base_path = "./experiments/replication_experiments/replication_data/"
 
 class ExperimentReplicator():
     def __init__(self):

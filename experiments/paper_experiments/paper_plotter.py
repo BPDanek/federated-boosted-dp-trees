@@ -2803,7 +2803,7 @@ set_fontsize()
 # vary_clients()
 # computation_benchmark()
 
-comparison_bubble_plot()
+# comparison_bubble_plot()
 
 # ---------- MAIN PAPER TABLES ----------
 

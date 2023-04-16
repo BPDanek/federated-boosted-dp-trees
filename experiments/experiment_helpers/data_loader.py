@@ -39,12 +39,13 @@ class DataLoader():
          data_dict[name+"_"+str(seed)] = data
 
     def _load_credit1(self, data_dict, seed, test_size, remove_missing, verbose):
-        credit1_df = pd.read_csv(data_path + "Kaggle Credit 1/credit1-training.csv")
+        credit1_df = pd.read_csv(data_path + "Kaggle_Credit_1/credit1-training.csv")
         credit1_df = credit1_df.drop('Unnamed: 0', axis=1)
 
         if remove_missing:
             num_rows = credit1_df.shape[0]
-            credit1_df = credit1_df.dropna()
+            # credit1_df = credit1_df.dropna()
+            credit1_df = credit1_df.dropna(how='any')
             print("[Data Loader] Removing nans from Credit 1", num_rows, "vs", credit1_df.shape[0])
 
         credit1_y = credit1_df["SeriousDlqin2yrs"]
