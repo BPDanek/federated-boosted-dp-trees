@@ -17,7 +17,7 @@ dtype: float64
 [0.0694859 0.9305141] 
 
 1
-Beginning simulation... Total number of experiments: 2025
+Beginning simulation... Total number of experiments: 2250
 Data Path ./experiments/replication_experiments/replication_data/
-Experiment finished total time: 760.5323007106781
+Experiment finished total time: 747.2937819957733
 Plotting data...
