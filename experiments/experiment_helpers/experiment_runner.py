@@ -233,7 +233,8 @@ class ExperimentRunner:
                                  "t_server_sampling_features", "t_server_calculating_internal_split", "t_server_split_constraints", "t_server_leaf_weight"]
 
                 columns = base_columns + comm_stats + time_stats
-                pd.DataFrame(res, columns=columns).to_csv(self.data_path + filename + ".csv", index=False)
+                save_path = '/home/bdanek2/federated-boosted-dp-trees/experiments/replication_experiments/replication_data/'
+                pd.DataFrame(res, columns=columns).to_csv(save_path + filename + ".csv", index=False)
         pool.close()
         end_time = time.time()
         print("Experiment finished total time:", end_time-global_time)

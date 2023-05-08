@@ -71,4 +71,4 @@ if __name__ == "__main__":
     # args = parser.parse_args()
     # replicator.replicate(args.fig_num, overwrite=args.overwrite)
 
-    replicator.replicate(1, overwrite=False, dataset="Credit 1")
+    replicator.replicate(6, overwrite=False, dataset="Credit 1")

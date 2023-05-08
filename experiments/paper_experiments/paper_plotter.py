@@ -1024,7 +1024,7 @@ def plot_low_eps_bb(in_path="./paper_results/E5_rf_boosting_final.csv", out_path
     # epsilon = ""
     # epsilon = 0.5
     # df = df[df["epsilon"] == epsilon]
-    df = df[df["epsilon"].isin([0.1, 0.5])]
+    df = df[df["epsilon"].isin([0.1, 0.5])] # one of array([0.05, 0.1 , 0.2 , 0.3 , 0.4 , 0.5 ])
     df = df[~df["args"].str.contains("EBM")]
     df = df[~df["args"].str.contains("Gradient")]
     df = df[~df["args"].str.contains("gbm")]
@@ -1089,10 +1089,10 @@ def plot_comparisons(in_path=None, out_path="./paper_plots/", replication=False,
         non_dp_df = pd.read_csv("./paper_results/non_dp_comparisons.csv")
     else:
         df = pd.read_csv(in_path)
-        non_dp_df = pd.read_csv("../paper_experiments/paper_results/non_dp_comparisons.csv")
+        non_dp_df = pd.read_csv("./experiments/paper_experiments/paper_results/non_dp_comparisons.csv")
 
     # ldp_df = pd.read_csv("./paper_results/ldp.csv")
-    ldp_df = pd.read_csv("./paper_results/ldp_tr.csv")
+    ldp_df = pd.read_csv("./experiments/paper_experiments/paper_results/ldp_tr.csv")
 
     print(ldp_df["args"].unique())
 
@@ -1252,7 +1252,7 @@ def plot_comparisons(in_path=None, out_path="./paper_plots/", replication=False,
     # Filter df
     df = df[df["dataset"] == dataset]
     df = df[df["max_depth"] == "4"]
-    df = df[df["epsilon"] == 1]
+    df = df[df["epsilon"] == 0.5]
 
     non_dp_df = non_dp_df[non_dp_df["dataset"] == dataset]
     non_dp_df = non_dp_df[non_dp_df["max_depth"] == "4"]
@@ -2792,7 +2792,6 @@ def appendix_E5():
 # ============================================= Plotting Funcs =============================================
 
 base_path = "./paper_plots/"
-
 set_fontsize()
 
 # ---------- REVISIONS ----------
@@ -2806,6 +2805,9 @@ set_fontsize()
 # comparison_bubble_plot()
 
 # ---------- MAIN PAPER TABLES ----------
+
+# import os
+# os.chdir('/home/bdanek2/federated-boosted-dp-trees/experiments/paper_experiments/')
 
 # table_split_methods_with_update() # Table 2
 # table_split_candidate() # Table 3
