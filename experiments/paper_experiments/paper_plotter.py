@@ -560,7 +560,7 @@ def plot_split_candidates(in_path=None, out_path="./paper_plots/", replication=F
     filtered_df = filtered_df[filtered_df["num_trees"].isin(["100", "200", "300"])]
 
     # epsilon = ""
-    epsilon = 0.25
+    epsilon = 1
     filtered_df = filtered_df[filtered_df["epsilon"] == epsilon]
 
     filtered_df = filtered_df[filtered_df["hist_bin"] == 32]
