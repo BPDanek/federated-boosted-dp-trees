@@ -167,7 +167,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     # df = df[df["num_trees"] == trees]
 
     # epsilon = ""
-    epsilon = 1
+    epsilon = 0.25
     # filter_df = filter_df[filter_df["epsilon"] == epsilon]
     if show_dp:
         filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0.05]])

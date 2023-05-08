@@ -4,4 +4,4 @@ import os
 os.chdir('/home/bdanek2/federated-boosted-dp-trees/')
 
 e = ExperimentReplicator()
-e.replicate(1, overwrite=False)
+e.replicate(1, overwrite=True)
