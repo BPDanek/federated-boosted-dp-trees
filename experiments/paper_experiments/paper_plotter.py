@@ -170,7 +170,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     epsilon = 1
     # filter_df = filter_df[filter_df["epsilon"] == epsilon]
     if show_dp:
-        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0]])
+        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0.05]])
     else:
         filter_df = filter_df[filter_df["epsilon"] == epsilon]
 
@@ -201,7 +201,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
         ax.get_legend().remove()
 
     # plt.tight_layout()
-    # plt.savefig(out_path + "vary_t_" + dataset + ".pdf")
+    plt.savefig(out_path + "vary_t_" + dataset + ".pdf")
     # plt.show()
     plt.clf()
 
