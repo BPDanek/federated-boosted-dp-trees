@@ -1,0 +1,320 @@
+                      Hist                             \
+                  Gradient                  Averaging   
+Bank      0.6282 +- 0.0688           0.7249 +- 0.0274   
+Credit 1  0.5748 +- 0.0852            0.6769 +- 0.058   
+Credit 2  0.6288 +- 0.0569  \textbf{0.6751 +- 0.0246}   
+adult     0.6749 +- 0.0524           0.6373 +- 0.0457   
+nomao     0.8483 +- 0.0138  \textbf{0.8885 +- 0.0038}   
+
+                                                   PR  \
+                             Newton          Gradient   
+Bank      \textbf{0.7562 +- 0.0337}   0.676 +- 0.0376   
+Credit 1  \textbf{0.7522 +- 0.0162}  0.7094 +- 0.0312   
+Credit 2           0.6575 +- 0.0486  0.6239 +- 0.0486   
+adult     \textbf{0.8013 +- 0.0225}  0.7688 +- 0.0253   
+nomao              0.8758 +- 0.0075  0.8766 +- 0.0072   
+
+                                                                \
+                          Averaging                     Newton   
+Bank               0.7803 +- 0.0309  \textbf{0.7998 +- 0.0203}   
+Credit 1           0.7165 +- 0.0337  \textbf{0.7676 +- 0.0196}   
+Credit 2           0.6864 +- 0.0249  \textbf{0.6882 +- 0.0207}   
+adult              0.8281 +- 0.0183  \textbf{0.8416 +- 0.0108}   
+nomao     \textbf{0.8904 +- 0.0055}             0.88 +- 0.0072   
+
+                                 TR                    \
+                           Gradient         Averaging   
+Bank                0.855 +- 0.0063   0.8391 +- 0.014   
+Credit 1           0.7782 +- 0.0201  0.7769 +- 0.0164   
+Credit 2           0.7346 +- 0.0113  0.7272 +- 0.0113   
+adult              0.8751 +- 0.0049   0.867 +- 0.0042   
+nomao     \textbf{0.8973 +- 0.0047}  0.8877 +- 0.0058   
+
+                                     
+                             Newton  
+Bank       \textbf{0.859 +- 0.0091}  
+Credit 1     \textbf{0.8 +- 0.0077}  
+Credit 2  \textbf{0.7419 +- 0.0081}  
+adult     \textbf{0.8752 +- 0.0049}  
+nomao              0.8941 +- 0.0053  
+\begin{tabular}{lllllll}
+\toprule
+   &        &                       Bank &                   Credit 1 &                   Credit 2 &                      adult &                      nomao \\
+\midrule
+Hist & Gradient &           0.6282 +- 0.0688 &           0.5748 +- 0.0852 &           0.6288 +- 0.0569 &           0.6749 +- 0.0524 &           0.8483 +- 0.0138 \\
+   & Averaging &           0.7249 +- 0.0274 &            0.6769 +- 0.058 &  \textbf{0.6751 +- 0.0246} &           0.6373 +- 0.0457 &  \textbf{0.8885 +- 0.0038} \\
+   & Newton &  \textbf{0.7562 +- 0.0337} &  \textbf{0.7522 +- 0.0162} &           0.6575 +- 0.0486 &  \textbf{0.8013 +- 0.0225} &           0.8758 +- 0.0075 \\
+PR & Gradient &            0.676 +- 0.0376 &           0.7094 +- 0.0312 &           0.6239 +- 0.0486 &           0.7688 +- 0.0253 &           0.8766 +- 0.0072 \\
+   & Averaging &           0.7803 +- 0.0309 &           0.7165 +- 0.0337 &           0.6864 +- 0.0249 &           0.8281 +- 0.0183 &  \textbf{0.8904 +- 0.0055} \\
+   & Newton &  \textbf{0.7998 +- 0.0203} &  \textbf{0.7676 +- 0.0196} &  \textbf{0.6882 +- 0.0207} &  \textbf{0.8416 +- 0.0108} &             0.88 +- 0.0072 \\
+TR & Gradient &            0.855 +- 0.0063 &           0.7782 +- 0.0201 &           0.7346 +- 0.0113 &           0.8751 +- 0.0049 &  \textbf{0.8973 +- 0.0047} \\
+   & Averaging &            0.8391 +- 0.014 &           0.7769 +- 0.0164 &           0.7272 +- 0.0113 &            0.867 +- 0.0042 &           0.8877 +- 0.0058 \\
+   & Newton &   \textbf{0.859 +- 0.0091} &     \textbf{0.8 +- 0.0077} &  \textbf{0.7419 +- 0.0081} &  \textbf{0.8752 +- 0.0049} &           0.8941 +- 0.0053 \\
+\bottomrule
+\end{tabular}
+
+
+
+{'DP-XGBoost TR - adaptive_hessian rounds: 30False', 'DP-XGBoost TR - adaptive_hessian rounds: infFalse', 'DP-XGBoost TR - adaptive_hessian rounds: 20False', 'DP-XGBoost TR - feverless rounds:NoneFalse', 'DP-XGBoost TR - exact_quantiles rounds:NoneFalse', 'DP-XGBoost TR - log rounds:NoneFalse', 'DP-XGBoost TR - uniform rounds:NoneFalse', 'DP-XGBoost TR - adaptive_hessian rounds: 5False', 'DP-XGBoost TR - adaptive_hessian rounds: 10False'}
+dataset       args                                              num_trees  epsilon  max_depth
+Bank          DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.874878
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.869492
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.869840
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.873376
+Credit 1      DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.846215
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.836721
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.833875
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.782213
+Credit 2      DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.737655
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.737965
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.749491
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.746130
+adult         DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.888793
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.882321
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.884766
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.886163
+higgs-sample  DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.721067
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.735242
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.687958
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.644899
+nomao         DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.902644
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.898674
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.900320
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.902123
+Name: test_auc, dtype: float64
+dataset       args                                              num_trees  epsilon  max_depth
+Bank          DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.006623
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.008705
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.008652
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.007436
+Credit 1      DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.003485
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.004489
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.005777
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.024679
+Credit 2      DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.008410
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.008275
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.008001
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.009171
+adult         DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.003473
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.004732
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.005356
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.003358
+higgs-sample  DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.018087
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.008211
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.014138
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.029297
+nomao         DP-XGBoost TR - adaptive_hessian rounds: 5False   100        1.0      4            0.004068
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse  100        1.0      4            0.005215
+              DP-XGBoost TR - log rounds:NoneFalse              100        1.0      4            0.006109
+              DP-XGBoost TR - uniform rounds:NoneFalse          100        1.0      4            0.004971
+Name: test_auc, dtype: float64
+dataset       args                                            
+Bank          DP-XGBoost TR - adaptive_hessian rounds: 5False     \textbf{0.8749} (0.0066)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse             0.8695 (0.0087)
+              DP-XGBoost TR - log rounds:NoneFalse                         0.8698 (0.0087)
+              DP-XGBoost TR - uniform rounds:NoneFalse                     0.8734 (0.0074)
+Credit 1      DP-XGBoost TR - adaptive_hessian rounds: 5False     \textbf{0.8462} (0.0035)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse             0.8367 (0.0045)
+              DP-XGBoost TR - log rounds:NoneFalse                         0.8339 (0.0058)
+              DP-XGBoost TR - uniform rounds:NoneFalse                     0.7822 (0.0247)
+Credit 2      DP-XGBoost TR - adaptive_hessian rounds: 5False              0.7377 (0.0084)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse              0.738 (0.0083)
+              DP-XGBoost TR - log rounds:NoneFalse                 \textbf{0.7495} (0.008)
+              DP-XGBoost TR - uniform rounds:NoneFalse                     0.7461 (0.0092)
+adult         DP-XGBoost TR - adaptive_hessian rounds: 5False     \textbf{0.8888} (0.0035)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse             0.8823 (0.0047)
+              DP-XGBoost TR - log rounds:NoneFalse                         0.8848 (0.0054)
+              DP-XGBoost TR - uniform rounds:NoneFalse                     0.8862 (0.0034)
+higgs-sample  DP-XGBoost TR - adaptive_hessian rounds: 5False              0.7211 (0.0181)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse    \textbf{0.7352} (0.0082)
+              DP-XGBoost TR - log rounds:NoneFalse                          0.688 (0.0141)
+              DP-XGBoost TR - uniform rounds:NoneFalse                     0.6449 (0.0293)
+nomao         DP-XGBoost TR - adaptive_hessian rounds: 5False     \textbf{0.9026} (0.0041)
+              DP-XGBoost TR - exact_quantiles rounds:NoneFalse             0.8987 (0.0052)
+              DP-XGBoost TR - log rounds:NoneFalse                         0.9003 (0.0061)
+              DP-XGBoost TR - uniform rounds:NoneFalse                      0.9021 (0.005)
+Name: test_auc, dtype: object
+['Bank', 'Credit 1', 'Credit 2', 'adult', 'higgs-sample', 'nomao']
+['IH (s=5)', 'Quantiles', 'Log', 'Uniform']
+                              IH (s=5)                 Quantiles  \
+Bank          \textbf{0.8749} (0.0066)           0.8695 (0.0087)   
+Credit 1      \textbf{0.8462} (0.0035)           0.8367 (0.0045)   
+Credit 2               0.7377 (0.0084)            0.738 (0.0083)   
+adult         \textbf{0.8888} (0.0035)           0.8823 (0.0047)   
+higgs-sample           0.7211 (0.0181)  \textbf{0.7352} (0.0082)   
+nomao         \textbf{0.9026} (0.0041)           0.8987 (0.0052)   
+
+                                  Log          Uniform  
+Bank                  0.8698 (0.0087)  0.8734 (0.0074)  
+Credit 1              0.8339 (0.0058)  0.7822 (0.0247)  
+Credit 2      \textbf{0.7495} (0.008)  0.7461 (0.0092)  
+adult                 0.8848 (0.0054)  0.8862 (0.0034)  
+higgs-sample           0.688 (0.0141)  0.6449 (0.0293)  
+nomao                 0.9003 (0.0061)   0.9021 (0.005)  
+\begin{tabular}{lllll}
+\toprule
+{} &                  IH (s=5) &                 Quantiles &                      Log &          Uniform \\
+\midrule
+Bank         &  \textbf{0.8749} (0.0066) &           0.8695 (0.0087) &          0.8698 (0.0087) &  0.8734 (0.0074) \\
+Credit 1     &  \textbf{0.8462} (0.0035) &           0.8367 (0.0045) &          0.8339 (0.0058) &  0.7822 (0.0247) \\
+Credit 2     &           0.7377 (0.0084) &            0.738 (0.0083) &  \textbf{0.7495} (0.008) &  0.7461 (0.0092) \\
+adult        &  \textbf{0.8888} (0.0035) &           0.8823 (0.0047) &          0.8848 (0.0054) &  0.8862 (0.0034) \\
+higgs-sample &           0.7211 (0.0181) &  \textbf{0.7352} (0.0082) &           0.688 (0.0141) &  0.6449 (0.0293) \\
+nomao        &  \textbf{0.9026} (0.0041) &           0.8987 (0.0052) &          0.9003 (0.0061) &   0.9021 (0.005) \\
+\bottomrule
+\end{tabular}
+
+dataset   args                                num_trees  epsilon  max_depth
+Bank      DP-RF (Vec Mech) 1.0                200        0.1      4            0.787600
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.819003
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.804790
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.786500
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.775232
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.766258
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.786582
+Credit 1  DP-RF (Vec Mech) 1.0                200        0.1      4            0.758481
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.759071
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.768287
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.768411
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.757778
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.744142
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.769265
+Credit 2  DP-RF (Vec Mech) 1.0                200        0.1      4            0.719038
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.719923
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.715243
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.719173
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.710005
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.710630
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.695048
+adult     DP-RF (Vec Mech) 1.0                200        0.1      4            0.843775
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.859961
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.856626
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.849283
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.844279
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.838185
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.837149
+nomao     DP-RF (Vec Mech) 1.0                200        0.1      4            0.885934
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.892882
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.890266
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.887120
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.885765
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.885246
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.866886
+Name: test_auc, dtype: float64
+dataset   args                                num_trees  epsilon  max_depth
+Bank      DP-RF (Vec Mech) 1.0                200        0.1      4            0.023258
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.010835
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.017714
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.016728
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.014261
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.012738
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.022386
+Credit 1  DP-RF (Vec Mech) 1.0                200        0.1      4            0.014730
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.019366
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.019875
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.016469
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.019377
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.019644
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.016009
+Credit 2  DP-RF (Vec Mech) 1.0                200        0.1      4            0.015553
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.016393
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.016121
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.014057
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.014563
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.010617
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.013357
+adult     DP-RF (Vec Mech) 1.0                200        0.1      4            0.008586
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.005711
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.004757
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.007297
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.006497
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.010545
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.014755
+nomao     DP-RF (Vec Mech) 1.0                200        0.1      4            0.005590
+          DP-TR Batch Newton (Vec Mech) 0.05  200        0.1      4            0.005496
+          DP-TR Batch Newton (Vec Mech) 0.1   200        0.1      4            0.005726
+          DP-TR Batch Newton (Vec Mech) 0.25  200        0.1      4            0.006112
+          DP-TR Batch Newton (Vec Mech) 0.5   200        0.1      4            0.006073
+          DP-TR Batch Newton (Vec Mech) 1.0   200        0.1      4            0.005761
+          DP-TR Newton (Vec Mech) 1.0         200        0.1      4            0.008828
+Name: test_auc, dtype: float64
+dataset   args                              
+Bank      DP-RF (Vec Mech) 1.0                           0.7876 (0.0233)
+          DP-TR Batch Newton (Vec Mech) 0.05     \textbf{0.819} (0.0108)
+          DP-TR Batch Newton (Vec Mech) 0.1              0.8048 (0.0177)
+          DP-TR Batch Newton (Vec Mech) 0.25             0.7865 (0.0167)
+          DP-TR Batch Newton (Vec Mech) 0.5              0.7752 (0.0143)
+          DP-TR Batch Newton (Vec Mech) 1.0              0.7663 (0.0127)
+          DP-TR Newton (Vec Mech) 1.0                    0.7866 (0.0224)
+Credit 1  DP-RF (Vec Mech) 1.0                           0.7585 (0.0147)
+          DP-TR Batch Newton (Vec Mech) 0.05             0.7591 (0.0194)
+          DP-TR Batch Newton (Vec Mech) 0.1              0.7683 (0.0199)
+          DP-TR Batch Newton (Vec Mech) 0.25             0.7684 (0.0165)
+          DP-TR Batch Newton (Vec Mech) 0.5              0.7578 (0.0194)
+          DP-TR Batch Newton (Vec Mech) 1.0              0.7441 (0.0196)
+          DP-TR Newton (Vec Mech) 1.0            \textbf{0.7693} (0.016)
+Credit 2  DP-RF (Vec Mech) 1.0                            0.719 (0.0156)
+          DP-TR Batch Newton (Vec Mech) 0.05    \textbf{0.7199} (0.0164)
+          DP-TR Batch Newton (Vec Mech) 0.1              0.7152 (0.0161)
+          DP-TR Batch Newton (Vec Mech) 0.25             0.7192 (0.0141)
+          DP-TR Batch Newton (Vec Mech) 0.5                0.71 (0.0146)
+          DP-TR Batch Newton (Vec Mech) 1.0              0.7106 (0.0106)
+          DP-TR Newton (Vec Mech) 1.0                     0.695 (0.0134)
+adult     DP-RF (Vec Mech) 1.0                           0.8438 (0.0086)
+          DP-TR Batch Newton (Vec Mech) 0.05      \textbf{0.86} (0.0057)
+          DP-TR Batch Newton (Vec Mech) 0.1              0.8566 (0.0048)
+          DP-TR Batch Newton (Vec Mech) 0.25             0.8493 (0.0073)
+          DP-TR Batch Newton (Vec Mech) 0.5              0.8443 (0.0065)
+          DP-TR Batch Newton (Vec Mech) 1.0              0.8382 (0.0105)
+          DP-TR Newton (Vec Mech) 1.0                    0.8371 (0.0148)
+nomao     DP-RF (Vec Mech) 1.0                           0.8859 (0.0056)
+          DP-TR Batch Newton (Vec Mech) 0.05    \textbf{0.8929} (0.0055)
+          DP-TR Batch Newton (Vec Mech) 0.1              0.8903 (0.0057)
+          DP-TR Batch Newton (Vec Mech) 0.25             0.8871 (0.0061)
+          DP-TR Batch Newton (Vec Mech) 0.5              0.8858 (0.0061)
+          DP-TR Batch Newton (Vec Mech) 1.0              0.8852 (0.0058)
+          DP-TR Newton (Vec Mech) 1.0                    0.8669 (0.0088)
+Name: test_auc, dtype: object
+['Bank', 'Credit 1', 'Credit 2', 'adult', 'nomao']
+['Batch (B=10)', 'Batch (B=20)', 'Batch (B=50)', 'Batch (B=100)', 'Batch (B=200)', 'DP-RF (B=200)', 'Newton (B=1)']
+                                  Bank                 Credit 1  \
+Batch (B=10)           0.7876 (0.0233)          0.7585 (0.0147)   
+Batch (B=20)   \textbf{0.819} (0.0108)          0.7591 (0.0194)   
+Batch (B=50)           0.8048 (0.0177)          0.7683 (0.0199)   
+Batch (B=100)          0.7865 (0.0167)          0.7684 (0.0165)   
+Batch (B=200)          0.7752 (0.0143)          0.7578 (0.0194)   
+DP-RF (B=200)          0.7663 (0.0127)          0.7441 (0.0196)   
+Newton (B=1)           0.7866 (0.0224)  \textbf{0.7693} (0.016)   
+
+                               Credit 2                   adult  \
+Batch (B=10)             0.719 (0.0156)         0.8438 (0.0086)   
+Batch (B=20)   \textbf{0.7199} (0.0164)  \textbf{0.86} (0.0057)   
+Batch (B=50)            0.7152 (0.0161)         0.8566 (0.0048)   
+Batch (B=100)           0.7192 (0.0141)         0.8493 (0.0073)   
+Batch (B=200)             0.71 (0.0146)         0.8443 (0.0065)   
+DP-RF (B=200)           0.7106 (0.0106)         0.8382 (0.0105)   
+Newton (B=1)             0.695 (0.0134)         0.8371 (0.0148)   
+
+                                  nomao  
+Batch (B=10)            0.8859 (0.0056)  
+Batch (B=20)   \textbf{0.8929} (0.0055)  
+Batch (B=50)            0.8903 (0.0057)  
+Batch (B=100)           0.8871 (0.0061)  
+Batch (B=200)           0.8858 (0.0061)  
+DP-RF (B=200)           0.8852 (0.0058)  
+Newton (B=1)            0.8669 (0.0088)   
+
+\begin{tabular}{llllll}
+\toprule
+{} &                     Bank &                 Credit 1 &                  Credit 2 &                   adult &                     nomao \\
+\midrule
+Batch (B=10)  &          0.7876 (0.0233) &          0.7585 (0.0147) &            0.719 (0.0156) &         0.8438 (0.0086) &           0.8859 (0.0056) \\
+Batch (B=20)  &  \textbf{0.819} (0.0108) &          0.7591 (0.0194) &  \textbf{0.7199} (0.0164) &  \textbf{0.86} (0.0057) &  \textbf{0.8929} (0.0055) \\
+Batch (B=50)  &          0.8048 (0.0177) &          0.7683 (0.0199) &           0.7152 (0.0161) &         0.8566 (0.0048) &           0.8903 (0.0057) \\
+Batch (B=100) &          0.7865 (0.0167) &          0.7684 (0.0165) &           0.7192 (0.0141) &         0.8493 (0.0073) &           0.8871 (0.0061) \\
+Batch (B=200) &          0.7752 (0.0143) &          0.7578 (0.0194) &             0.71 (0.0146) &         0.8443 (0.0065) &           0.8858 (0.0061) \\
+DP-RF (B=200) &          0.7663 (0.0127) &          0.7441 (0.0196) &           0.7106 (0.0106) &         0.8382 (0.0105) &           0.8852 (0.0058) \\
+Newton (B=1)  &          0.7866 (0.0224) &  \textbf{0.7693} (0.016) &            0.695 (0.0134) &         0.8371 (0.0148) &           0.8669 (0.0088) \\
+\bottomrule
+\end{tabular}
+

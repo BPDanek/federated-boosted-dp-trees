@@ -2806,10 +2806,11 @@ set_fontsize()
 # comparison_bubble_plot()
 
 # ---------- MAIN PAPER TABLES ----------
-
-# table_split_methods_with_update() # Table 2
-# table_split_candidate() # Table 3
-# table_low_eps_bb() # Table 4
+import os
+os.chdir('/home/bdanek2/federated-boosted-dp-trees/experiments/paper_experiments')
+table_split_methods_with_update() # Table 2
+table_split_candidate() # Table 3
+table_low_eps_bb() # Table 4
 
 # table_comparisons() # Not used
 
