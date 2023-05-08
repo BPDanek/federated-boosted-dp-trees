@@ -33,8 +33,8 @@ def dp_split_methods_with_update_methods(save_data=False, filename="dp_split_met
         iters = iters
         data_loader = DataLoader(seeds)
         datasets = data_loader.load_datasets(datasets, remove_missing=True, return_dict=True, verbose=True).items()
-        num_trees = [5, 10,  25,  50,  100, 150, 200, 250, 300]
-        # num_trees = [80, 90, 100, 110, 120, 130, 140, 150, 160]
+        # num_trees = [5, 10,  25,  50,  100, 150, 200, 250, 300]
+        num_trees = [10, 20, 30, 40, 50, 60, 70, 80, 90]
         hist_sizes=[32]
         depths = [2,3,4,5,6]
         epsilons = [0.1, 0.25, 0.5, 0.75, 1]
