@@ -167,10 +167,10 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     # df = df[df["num_trees"] == trees]
 
     # epsilon = ""
-    epsilon = 0.25
+    epsilon = 1
     # filter_df = filter_df[filter_df["epsilon"] == epsilon]
     if show_dp:
-        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0.05]])
+        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0]])
     else:
         filter_df = filter_df[filter_df["epsilon"] == epsilon]
 
@@ -200,9 +200,9 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     if not legends[0]:
         ax.get_legend().remove()
 
-    plt.tight_layout()
-    plt.savefig(out_path + "vary_t_" + dataset + ".pdf")
-    #plt.show()
+    # plt.tight_layout()
+    # plt.savefig(out_path + "vary_t_" + dataset + ".pdf")
+    # plt.show()
     plt.clf()
 
     # ================= Vary D ==================
@@ -223,7 +223,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     # df = df[df["num_trees"] == trees]
 
     # epsilon = ""
-    epsilon = 0.25
+    epsilon = 1
     filter_df = filter_df[filter_df["epsilon"] == epsilon]
     filter_df = filter_df[filter_df["args"].str.contains("Newton")] # xgb update
 
@@ -248,7 +248,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     plt.ylim(y_lims[1])
     plt.tight_layout()
     plt.savefig(out_path + "vary_D_" + dataset + ".pdf")
-    #plt.show()
+    # plt.show()
     plt.clf()
 
     # ================= Vary eps ==================
@@ -289,7 +289,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     plt.ylabel("Test AUC")
     plt.savefig(out_path + "vary_e_" + dataset + ".pdf")
     set_fontsize()
-    #plt.show()
+    # plt.show()
     plt.clf()
 
 # Displays latex for Table 3
