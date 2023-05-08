@@ -1252,7 +1252,7 @@ def plot_comparisons(in_path=None, out_path="./paper_plots/", replication=False,
     # Filter df
     df = df[df["dataset"] == dataset]
     df = df[df["max_depth"] == "4"]
-    df = df[df["epsilon"] == 0.5]
+    df = df[df["epsilon"] == 0.1]
 
     non_dp_df = non_dp_df[non_dp_df["dataset"] == dataset]
     non_dp_df = non_dp_df[non_dp_df["max_depth"] == "4"]
