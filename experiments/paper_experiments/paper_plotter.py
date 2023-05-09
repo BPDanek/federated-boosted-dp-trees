@@ -170,7 +170,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     epsilon = 1
     # filter_df = filter_df[filter_df["epsilon"] == epsilon]
     if show_dp:
-        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0]])
+        filter_df = pd.concat([filter_df[filter_df["epsilon"] == epsilon], filter_df[filter_df["epsilon"] == 0.05]])
     else:
         filter_df = filter_df[filter_df["epsilon"] == epsilon]
 
@@ -200,9 +200,9 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     if not legends[0]:
         ax.get_legend().remove()
 
-    plt.tight_layout()
+    # plt.tight_layout()
     plt.savefig(out_path + "vary_t_" + dataset + ".pdf")
-    #plt.show()
+    # plt.show()
     plt.clf()
 
     # ================= Vary D ==================
@@ -248,7 +248,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     plt.ylim(y_lims[1])
     plt.tight_layout()
     plt.savefig(out_path + "vary_D_" + dataset + ".pdf")
-    #plt.show()
+    # plt.show()
     plt.clf()
 
     # ================= Vary eps ==================
@@ -289,7 +289,7 @@ def plot_split_methods_with_update(in_path="./paper_results/E1_dp_split_methods_
     plt.ylabel("Test AUC")
     plt.savefig(out_path + "vary_e_" + dataset + ".pdf")
     set_fontsize()
-    #plt.show()
+    # plt.show()
     plt.clf()
 
 # Displays latex for Table 3
@@ -1014,7 +1014,7 @@ def plot_low_eps_bb(in_path="./paper_results/E5_rf_boosting_final.csv", out_path
     max_depth = "4"
     df = df[df["max_depth"] == max_depth]
 
-    trees = "200"
+    trees = "10"
     df = df[df["num_trees"] == trees]
 
     df["batch_perc"][df["args"].str.contains("DP-TR Newton")] = 1/int(trees)
@@ -2803,7 +2803,7 @@ set_fontsize()
 # vary_clients()
 # computation_benchmark()
 
-comparison_bubble_plot()
+# comparison_bubble_plot()
 
 # ---------- MAIN PAPER TABLES ----------
 
