@@ -1,3 +1,6 @@
+# Extra Credit Notebook
+https://github.com/BPDanek/federated-boosted-dp-trees/blob/master/DL4health%20EC.ipynb
+
 # Reproduction
 Reproduction of various experiments can be conducted by first installing the requirements via (provided by author)
 ```
